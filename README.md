@@ -14,6 +14,7 @@ Foi utilizado o JavaScript para o desenvolvimento do sistema,para a exportação
 ### Fotos do Projeto
 
 ![Foto 1 - Site](https://raw.githubusercontent.com/lbbergamo/TP-Web2-AtribuicaodeNotas/blob/master/Informativos/tela-inicial.png)
+![Optional Text](../master/TP-Web2-AtribuicaodeNotas/blob/master/Informativos/tela-inicial.png)
 
 ## Calculo da Média
 

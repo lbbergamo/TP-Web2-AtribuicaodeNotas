@@ -11,6 +11,10 @@ Foi utilizado o JavaScript para o desenvolvimento do sistema,para a exportação
 [JavaScript export to Excel](http://jordiburgos.com/post/2013/javascript-export-to-excel.html)
 ```
 
+### Fotos do Projeto
+
+
+
 ## Calculo da Média
 
 Como o curso de Sistema de Informação da Universidade Santa Cecília a media é ponderada então

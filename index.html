@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     });
   </script>
 </head>
+
 <body>
   <header class="p-fix">
     <img src="imagens/logo-vertical-branco.png" alt="logotipo da Unisanta" class="img-fluid">
@@ -149,12 +151,11 @@
       <button type="button" id="importar-dados" class="btn btn-light btn-lg ">Importar</button>
       <a download="DadosAlunos.xls" href="#"
         onclick="return ExcellentExport.excel(this, 'export-tabela', 'Sheet Name Here');">
-        <button type="button" class="btn btn-light btn-lg">Exportando Dados para Excel</button>
-      </a>
-      <p>
+        <button type="button" class="btn btn-light btn-lg">
+          Exportando Dados para Excel
+        </button></a>
     </form>
     <h4>Os dados são armazenados em Cache, apos fechar o navegador os dados poderão ser excluidos !</h4>
-    </p>
   </div>
   <script src="js-custom/form.js"></script>
   <script src="js-custom/inserindo-aluno.js"></script>

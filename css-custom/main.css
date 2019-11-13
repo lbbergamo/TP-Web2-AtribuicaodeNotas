@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+header{
+    background-color: #000000;
+    padding: 10px;
+}
+a{
+    width: 100px;
+    height: 40px;
+}
+a:hover{
+    color:#000000 !important;
+}
+/*Daqui para baixo estão as style correspondentes ao main.*/
+h2{
+    margin-top: 50px;
+}
+/*Aqui se encontrarão as config correspondentes ao sistema de atribuição de notas*/
+.p-fix{
+    position: initial;
+}
+/* Portal do Professor - table - formulario */
+td,th{
+    text-align: center;
+}
+.container-custom{
+    background-color:#343A40;
+    color: white;
+    margin: auto;
+    border-radius: 50px;
+    padding: 0.1em 0px 2em 3em;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance:textfield;
+}
+.aluno-reprovado{
+	background-color: lightcoral;
+}
+.aluno-aprovado{
+	background-color: lightblue;
+}
+.info-ra{
+    font-weight: bold;
+}
+#mensagem-erro{
+    padding-top: 2em;
+    color : red;
+    transform: 0.9s;
+    font-weight: 600;
+}
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+.botao{
+    margin-top: 1em;
+}
+/* Formalario de salvamento de dados e importação */
+.container-save {
+    background-color:#343A40;
+    color: white;
+    margin: auto;
+    border-radius: 50px;
+    padding: 1em 0px 1em 2em !important;
+    margin-top: 1em;
+}
+h4{
+    color: rgb(136, 150, 165);
+    font-size: small;
+    margin-top: 1em;
+}
+

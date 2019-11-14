@@ -1,168 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Atribuição de Notas | UNISANTA</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css-custom/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
-  <script>
-    require(['dist/excellentexport'], function (ee) {
-      window.ExcellentExport = ee;
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login || UNISANTA</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="css-custom/estilo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/materialize.min.js"></script>
 </head>
-
 <body>
-  <header class="p-fix">
-    <img src="imagens/logo-vertical-branco.png" alt="logotipo da Unisanta" class="img-fluid">
-  </header>
-  <table class="table table-bordered table-hover table-sm" id="export-tabela">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">RA</th>
-        <th scope="col">Nome</th>
-        <th scope="col">P1</th>
-        <th scope="col">TP1</th>
-        <th scope="col">Media 1 Semestre</th>
-        <th scope="col">FALTAS</th>
-        <th scope="col">P2</th>
-        <th scope="col">TP2</th>
-        <th scope="col">Media 2 Semestre</th>
-        <th scope="col">FALTAS</th>
-        <th scope="col">FALTAS TOTAL</th>
-        <th scope="col">MEDIA TOTAL</th>
-        <th scope="col">Situação</th>
-      </tr>
-    </thead>
-    <tbody id="Tabela-Alunos">
-      <tr class="alunos aluno-aprovado">
-        <th class="info-ra">160548</th>
-        <td class="info-nome">Leandro Bento Bergamo</td>
-        <td class="info-p1">8</td>
-        <td class="info-tp1">2</td>
-        <td class="info-media1">10</td>
-        <td class="info-faltas1">0</td>
-        <td class="info-p2">8</td>
-        <td class="info-tp2">2</td>
-        <td class="info-media2">10</td>
-        <td class="info-faltas2">0</td>
-        <td class="info-faltas">0</td>
-        <td class="info-media">10</td>
-        <td class="info-situacao">Aprovado!</td>
-      </tr>
-
-      <tr class="alunos aluno-aprovado">
-        <th class="info-ra">183928</th>
-        <td class="info-nome">Gabriel Gonçalves da Silva Tavares</td>
-        <td class="info-p1">8</td>
-        <td class="info-tp1">2</td>
-        <td class="info-media1">10</td>
-        <td class="info-faltas1">0</td>
-        <td class="info-p2">8</td>
-        <td class="info-tp2">2</td>
-        <td class="info-media2">10</td>
-        <td class="info-faltas2">0</td>
-        <td class="info-faltas">0</td>
-        <td class="info-media">10</td>
-        <td class="info-situacao">Aprovado!</td>
-      </tr>
-      <tr class="alunos aluno-aprovado">
-        <th class="info-ra">166328</th>
-        <td class="info-nome">Marcus Antonio Lamarão Gomes</td>
-        <td class="info-p1">8</td>
-        <td class="info-tp1">2</td>
-        <td class="info-media1">10</td>
-        <td class="info-faltas1">0</td>
-        <td class="info-p2">8</td>
-        <td class="info-tp2">2</td>
-        <td class="info-media2">10</td>
-        <td class="info-faltas2">0</td>
-        <td class="info-faltas">0</td>
-        <td class="info-media">10</td>
-        <td class="info-situacao">Aprovado!</td>
-      </tr>
-      <tr class="alunos aluno-aprovado">
-        <th class="info-ra">160548</th>
-        <td class="info-nome">Maycon Robson Silva Lima</td>
-        <td class="info-p1">8</td>
-        <td class="info-tp1">2</td>
-        <td class="info-media1">10</td>
-        <td class="info-faltas1">0</td>
-        <td class="info-p2">8</td>
-        <td class="info-tp2">2</td>
-        <td class="info-media2">10</td>
-        <td class="info-faltas2">0</td>
-        <td class="info-faltas">0</td>
-        <td class="info-media">10</td>
-        <td class="info-situacao">Aprovado!</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="container container-custom">
-    <ul id="mensagem-erro">
-    </ul>
-    <h1>Formulario</h1>
-    <h3>Dados do Aluno</h3>
-    <form id="form-add">
-      <div class="form-row">
-        <div class="col-2">
-          <input type="text" id="ra" class="form-control " placeholder="RA">
+    <img src="imagens/ortal Tech Co..png" alt="teclados e mouses num papel de parede" class="responsive-img bg-pag">
+<main class="row">
+    <div class="card black col s6">
+        <div class="card-content">
+            <div class="card-title">
+                <img src="imagens/logo-vertical-branco.png" alt="Logotipo da UNISANTA" class="responsive-img logo-uni">
+            </div>
+            <div class="card-content">
+                <div class="row">
+                <form action="formulario.html" method="POST">
+                    <label for="usuario">Usuário (E-mail):</label>
+                    <input type="email" class="input-field white-text" maxlength="30" required>
+                    <label for="senha" class="pwd-lbl">Senha</label>
+                    <input type="password" class="input-field white-text pwd-formu" minlength="10" maxlength="10" required>
+                    <button class="waves-effect waves-darken btn-large white black-text btn-formu">Login</button>
+                </form>
+            </div>
+            </div>
         </div>
-        <div class="col-7">
-          <input type="text" id="nome" class="form-control" placeholder="Nome Completo">
-        </div>
-      </div>
-      <h3> Primeiro Semestre </h3>
-      <div class="form-row">
-        <div class="col-1">
-          <input type="number" id="p1" class="form-control " placeholder="P1">
-        </div>
-        <div class="col-1">
-          <input type="number" id="tp1" class="form-control " placeholder="TP1">
-        </div>
-        <div class="col-1">
-          <input type="number" id="faltas1" class="form-control " placeholder="Faltas">
-        </div>
-      </div>
-      <h3> Segundo Semestre </h3>
-      <div class="form-row">
-        <div class="col-1">
-          <input type="number" id="p2" class="form-control " placeholder="P2">
-        </div>
-        <div class="col-1">
-          <input type="number" id="tp2" class="form-control " placeholder="TP2">
-        </div>
-        <div class="col-1">
-          <input type="number" id="faltas2" class="form-control " placeholder="Faltas">
-        </div>
-      </div>
-      <button type="button" id="adicionar-aluno" class="btn btn-light btn-lg botao">Enviar</button>
-    </form>
-  </div>
-  <div class="container container-save">
-    <h1>Dados</h1>
-    <form id="form-save">
-      <button type="button" id="salvar-dados" class="btn btn-light btn-lg">Salvar</button>
-      <button type="button" id="importar-dados" class="btn btn-light btn-lg ">Importar</button>
-      <a download="DadosAlunos.xls" href="#"
-        onclick="return ExcellentExport.excel(this, 'export-tabela', 'Sheet Name Here');">
-        <button type="button" class="btn btn-light btn-lg">
-          Exportando Dados para Excel
-        </button></a>
-    </form>
-    <h4>Os dados são armazenados em Cache, apos fechar o navegador os dados poderão ser excluidos !</h4>
-  </div>
-  <script src="js-custom/form.js"></script>
-  <script src="js-custom/inserindo-aluno.js"></script>
-  <script src="js-custom/calculo-media.js"></script>
-  <script src="js-custom/validacao.js"></script>
-  <script src="js-custom/remover-aluno.js"></script>
-  <script src="js-custom/form-dados.js"></script>
+    </div>
+</main>
 </body>
-
 </html>

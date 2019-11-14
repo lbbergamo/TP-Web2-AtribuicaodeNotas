@@ -1,6 +1,6 @@
 # Atribuição de Notas
 
-Projeto realizado para a materia Desenvolvimento de WEB 2 (2 bimestre) com o objetivo da utilização e implantação de Bootstrap e Requirejs.
+Projeto realizado para a materia Desenvolvimento de WEB 2 (2 bimestre) com o objetivo da utilização e implantação de Bootstrap, Requirejs e Materialize.
 O objetivo foi facilitar a atribuição de notas para os Professores do curso de Sistema de Informação.
 
 ### Descrição
@@ -46,6 +46,7 @@ Validação necessária:
 * [BootStrap](https://getbootstrap.com.br/docs/4.1/getting-started/introduction/) - BootStrap - Versão 4.1.3
 * [ExcellentExport.js](http://jordiburgos.com/post/2013/javascript-export-to-excel.html) - Exportação dos Dados da Tabela para Excel
 * [Requirejs](https://requirejs.org/docs/start.html) - Extensão necessária do ExcellentExport
+* [Materialize](https://materializecss.com/getting-started.html) - Materialize - Versão 1.0.0
 
 ## Autores
 
@@ -59,6 +60,6 @@ Validação necessária:
 * Professor Alexandre Sobrino
 * Aperfeiçoamento/Aprendizado da Linguagem JavaScript
 * Aperfeiçoamento/Aprendizado do Framework BootStrap
-* Aoerfeiçoamento/Aprendizado do GitHub
+* Aperfeiçoamento/Aprendizado do GitHub
 * Utilização de Codigos Externos
 * etc

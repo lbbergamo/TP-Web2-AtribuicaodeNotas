@@ -1,5 +1,3 @@
-console.log("Estou funcionando - validacao.js");
-
 function validacaoAluno(aluno) {
     var erro = [];
     if (parseFloat(aluno.p1) + parseFloat(aluno.tp1) > 10) {
@@ -31,15 +29,13 @@ function validacaoAluno(aluno) {
     }
     return erro;
 }
-
 function validaNota(nota) {
-    if (nota >= 10 || nota <= 0) {
+    if (nota >= 10 || nota < 0) {
         return true;
     } else {
         return false;
     }
 }
-
 function validacaoTrabalho(nota) {
     if (nota > 2 || nota < 0) {
         return true;
@@ -47,7 +43,6 @@ function validacaoTrabalho(nota) {
         return false;
     }
 }
-
 function validacaoFalta(falta) {
     if (falta < 0) {
         return true;
@@ -55,7 +50,6 @@ function validacaoFalta(falta) {
         return false;
     }
 }
-
 function exibeMensagemErro(erros) {
     var ul = document.querySelector("#mensagem-erro");
     ul.innerHTML = "";
@@ -66,7 +60,6 @@ function exibeMensagemErro(erros) {
             ul.appendChild(li);
         });
 }
-
 function validacaoNome(nome) {
     if (nome.length == 0) {
         return true;
@@ -74,7 +67,6 @@ function validacaoNome(nome) {
         return false;
     }
 }
-
 function tpNota0(nota) {
     var zero = 0;
     if (nota == 0) {
@@ -83,7 +75,6 @@ function tpNota0(nota) {
         return nota;
     }
 }
-
 function validarRA(numeroRa) {
     var alunos = document.querySelectorAll(".aluno");
     var validacao = false;

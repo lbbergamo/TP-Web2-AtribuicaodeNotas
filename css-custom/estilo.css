@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+.bg-pag{
+    height: 45em !important;
+    width: 100% !important;
+    position: fixed;
+    margin-top: -20px;
+}
+.card{
+    margin-left: 25.2% !important;
+    margin-top: 5% !important;
+}
+.logo-uni{
+    margin-left: 20% !important;
+}
+.pwd-formu{
+    margin-top: 10px !important;
+}
+.btn-formu{
+    margin-left: 40% !important;
+    margin-top: 20px;
+}
+
+body{
+    background-color: #D9D9D9;
+}

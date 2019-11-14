@@ -1,4 +1,3 @@
-console.log("Estou funcionando - forms.js");
 var botaoadiciona = document.querySelector("#adicionar-aluno");
 var alunos = [];
 botaoadiciona.addEventListener("click", function () {
@@ -18,7 +17,6 @@ botaoadiciona.addEventListener("click", function () {
         alunos.push(aluno);
     }
 })
-
 function obtendoFormulario(form) {
     var aluno = {
         ra: form.ra.value,
@@ -37,7 +35,6 @@ function obtendoFormulario(form) {
     }
     return aluno;
 }
-
 function calculoFaltas(faltas1, faltas2) {
     return (faltas1 + faltas2)
 }

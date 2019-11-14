@@ -1,5 +1,3 @@
-console.log("Estou funcionando - calculo-media.js");
-
 function calculoMedia(p1, tp1, p2, tp2) {
         var mediaP1,mediaP2;
      if (!isNaN(tp1)) {
@@ -14,9 +12,7 @@ function calculoMedia(p1, tp1, p2, tp2) {
     }
     var media = ((mediaP1 + (mediaP2 * 2)) / 3);
     return media.toFixed(2);
-
 }
-
 function calculoSituacao(media) {
     if (media < 5 || isNaN(media)) {
        return "Exame"
@@ -24,7 +20,6 @@ function calculoSituacao(media) {
         return "Aprovado!"
     }
 }
-
 function reprovado(media) {
     if (media < 5 || isNaN(media)) {
         return true
@@ -32,13 +27,11 @@ function reprovado(media) {
         return false
     }
 }
-
 function calculoMedia1(p1,tp2){
     let total = 0;
     total = parseFloat(p1) + parseFloat(tp2);
     return total.toFixed(2);
 }
-
 function calculoMedia2(mediaP1,mediaP2){
    return (mediaP1 + (mediaP2 * 2)) / 3;
 }

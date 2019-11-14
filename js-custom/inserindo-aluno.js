@@ -1,5 +1,3 @@
-console.log("Estou funcionando - inserindo-aluno.js");
-
 function montaTr(aluno) {
     var alunoTr = document.createElement("tr");
     alunoTr.classList.add("aluno");
@@ -24,14 +22,12 @@ function montaTr(aluno) {
     }
     return alunoTr;
 }
-
 function montaTd(dado, classe) {
     var td = document.createElement("td");
     td.textContent = dado;
     td.classList.add(classe);
     return td;
 }
-
 function adicionaAluno(aluno) {     //cria a tr e a td do forms 
     var alunoTr = montaTr(aluno);
     var tabela = document.querySelector("#Tabela-Alunos");
